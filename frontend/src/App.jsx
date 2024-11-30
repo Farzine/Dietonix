@@ -1,12 +1,11 @@
-import React from "react";
-import Navbar from "./Components/Navbar";
-
+import React from 'react';
+import LandingPage from './Pages/LandingPage';
 
 const App = () => {
   return (
-    <div className="App">
-      <Navbar />
-    </div>
+      <div> 
+       <LandingPage/>
+      </div>
   );
 };
 
