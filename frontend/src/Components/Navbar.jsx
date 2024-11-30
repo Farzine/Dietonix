@@ -5,7 +5,6 @@ const Navbar = () => {
     <nav className="bg-white shadow-md w-full">
       <div className="px-4 flex justify-between items-center h-16">
 
-        {/* Logo */}
         <div className="text-2xl font-bold text-gray-900">
           Dietonix
         </div>
@@ -30,13 +29,13 @@ const Navbar = () => {
         <div className="flex space-x-4">
           <a
             href="#login"
-            className="text-gray-600 hover:text-gray-900 px-4 py-2 border border-gray-300 rounded hover:bg-gray-100"
+            className="text-gray-600 hover:text-white px-4 py-2 border border-gray-300 rounded hover:bg-gray-2"
           >
             Login
           </a>
           <a
             href="#signup"
-            className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+            className="bg-gray-1 text-white px-4 py-2 rounded hover:bg-gray-2"
           >
             Sign Up
           </a>
