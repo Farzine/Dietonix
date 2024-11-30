@@ -1,23 +1,25 @@
 import React from 'react';
 import Navbar from '../Components/Navbar';
-import HeroPic1 from '../Assets/HeroPic1.jpg';
+import HeroPic from '../Assets/HeroPic.jpg';
 
 const LandingPage = () => {
   return (
     <div>
       <Navbar />
 
-      <section id="hero" className="relative w-full h-screen">
-     
+      {/* Hero Section with a border frame */}
+      <section id="hero" className="relative w-full h-screen border-4 border-white rounded-lg overflow-hidden">
+        {/* Container for the blurred image */}
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url(${HeroPic1})`,
-            filter: 'blur(8px)', 
+            backgroundImage: `url(${HeroPic})`,
+            filter: 'blur(8px)', // Apply blur to the background image
+            zIndex: -1, // Ensure it's behind the content
           }}
         ></div>
 
-        
+        {/* Content on top of the blurred image */}
         <div className="relative z-10 flex items-center justify-center h-full px-4 text-white">
           <div className="text-center space-y-6">
             <h1 className="text-5xl font-bold sm:text-6xl md:text-7xl text-white">
@@ -28,7 +30,7 @@ const LandingPage = () => {
             </p>
             <a
               href="#cta"
-              className="inline-block px-8 py-3 bg-blue-600 text-lg font-semibold text-white rounded-lg shadow-md hover:bg-blue-700 focus:outline-none"
+              className="inline-block px-8 py-3 bg-slate-600 text-lg font-semibold text-white rounded-lg shadow-md hover:bg-white hover:text-black focus:outline-none"
             >
               Get Started
             </a>
