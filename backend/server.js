@@ -4,13 +4,14 @@ const bodyParser = require('body-parser');
 const cors = require('cors'); 
 const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
-const frontUrl = process.env.NEXT_PUBLIC_APP_FRONTEND_URL;
+const frontUrl = process.env.VITE_PUBLIC_APP_FRONTEND_URL;
 
 
 
 ////////////////////////////////////////////////////////////////////
 const authRouter = require("./routes/auth/auth-routes");
 const userPreferenceRoutes = require("./routes/userPreferenceRoutes");
+const workoutAndNutritionPlanRoutes = require("./routes/workoutAndNutrationPlanRoutes");
 
 ////////////////////////////////////////////////////////////////////
 
@@ -50,6 +51,7 @@ app.use(cookieParser());
 /////////////////////////////////////////////////////////////////////////
 app.use("/api/auth", authRouter);
 app.use("/api/user-preferences", userPreferenceRoutes);
+app.use("/api/workout-nutrition-plans", workoutAndNutritionPlanRoutes);
 
 /////////////////////////////////////////////////////////////////////////
 

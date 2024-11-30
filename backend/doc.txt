@@ -3,3 +3,10 @@ login in api: post http://localhost:5000/api/auth/login
 auth check api: get http://localhost:5000/api/auth/check-auth
 logout api: post http://localhost:5000/api/auth/logout
 
+user preference api: get http://localhost:5000/api/user-preferences
+                     post http://localhost:5000/api/user-preferences
+                     delete http://localhost:5000/api/user-preferences
+
+gpt response generation: post http://localhost:5000/api/workout-nutrition-plans/generate
+save response: post http://localhost:5000/api/workout-nutrition-plans/save
+
