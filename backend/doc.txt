@@ -1,0 +1,5 @@
+user register api: post http://localhost:5000/api/auth/register
+login in api: post http://localhost:5000/api/auth/login
+auth check api: get http://localhost:5000/api/auth/check-auth
+logout api: post http://localhost:5000/api/auth/logout
+
